@@ -1,0 +1,100 @@
+/* [Mantenha todo o CSS anterior e certifique-se de que inclui os estilos abaixo para o Quiz] */
+
+/* Adicione ao seu arquivo styles.css existente: */
+
+.quiz-container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.quiz-question {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #eef2f5;
+    padding-bottom: 20px;
+}
+
+.quiz-question:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.quiz-question h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: var(--text-dark);
+}
+
+.quiz-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.quiz-options label {
+    background-color: var(--bg-light);
+    padding: 12px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.quiz-options label:hover {
+    background-color: var(--light-green);
+    color: var(--primary-dark);
+}
+
+.quiz-options input[type="radio"] {
+    accent-color: var(--primary-color);
+    width: 18px;
+    height: 18px;
+}
+
+.quiz-result-box {
+    margin-top: 30px;
+    padding: 25px;
+    border-radius: 6px;
+    text-align: center;
+    background-color: #e8f5e9;
+    border: 2px solid var(--primary-color);
+}
+
+.quiz-result-box h3 {
+    color: var(--primary-dark);
+    font-family: var(--font-heading);
+    margin-bottom: 10px;
+}
+
+.quiz-result-box p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.btn-secondary {
+    background-color: var(--text-light);
+    color: var(--white);
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-secondary:hover {
+    background-color: var(--text-dark);
+}
+
+.hidden {
+    display: none !important;
+}
